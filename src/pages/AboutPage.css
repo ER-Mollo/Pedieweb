@@ -1,0 +1,138 @@
+*{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  
+}
+.about{
+    top:0;
+    margin-top: 0;
+}
+.top-about{
+    top:0;
+    width:100%;
+    height: 60vh;
+    background-image: url('../assets/image4.jpg');
+    background-size: cover;
+}
+.top-about div{
+    background-color: rgba(0, 0, 0, 0.418);
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 1px;
+    /* padding-top:1%; */
+}
+.top-about h1{
+    padding-top: 10%;
+    /* background-color: red; */
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.story{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    
+}
+.story-right{
+    /* padding: 40px; */
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+    
+
+}
+.story-left{
+    padding: 20px;
+}
+.story-left h5{
+    font-size: 1.2rem;
+    color: #0000ff;
+}
+.story-left h3{
+    color: black;
+}
+.story-left p{
+    font-size: 1rem;
+}
+.story-right .logo{
+    width: 400px;
+    box-shadow: 30px 30px #0000ff;
+    margin-top: 30px;
+}
+.story-right .plug{
+    width: 40vw;
+    height: 100%;
+}
+.story-left.bottom{
+    background-color: #0000ff;
+
+}
+.story-left .white{
+    color: #ffffff;
+    padding: 10px;
+}
+
+.mission{
+    display: flex;
+    width:100%;
+    padding: 20px;
+    
+}
+.mission-left{
+    padding:20px;
+}
+.mission-right{
+   padding: 20px; 
+}
+.mission-values{
+    display: flex;
+    padding: 10px;
+    
+}
+.mission-values div{
+    padding: 3px;
+    /* padding-top: 30px; */
+    
+}
+
+/* 🌍 Responsive Design (Mobile Screens) */
+@media (max-width: 768px) {
+    .top-about h1 {
+        font-size: 2.5rem;
+    }
+
+    .story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-left {
+        padding: 20px;
+    }
+
+    .story-right {
+        justify-content: center;
+    }
+
+    .story-right .logo {
+        width: 80%;
+        box-shadow: 15px 15px #0000ff;
+    }
+
+    .mission {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mission-values {
+        flex-direction: column;
+    }
+
+    .mission-values div {
+        padding: 15px;
+    }
+}
+
