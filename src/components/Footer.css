@@ -22,6 +22,7 @@
 
 .footer-top-right {
     text-align: center;
+    /* text-align: center; */
 }
 
 .footer-top-right button {
@@ -107,6 +108,8 @@
 
     .footer-top-right {
         margin-top: 15px;
+        text-align: center;
+        background-color: #00d9ff56;
     }
 
     .footer-mid {

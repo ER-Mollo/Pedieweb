@@ -24,16 +24,16 @@ function Footer() {
                      </div>
                 </div>
                 <div className="social-icons">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/douglydouglas" target="_blank" rel="noopener noreferrer">
                         <FaFacebook size={25} color='#0000ff'/>
                     </a>
-                    <a href="mailto:info@yourdomain.com">
+                    <a href="mailto:info@pedipedienergy.com">
                         <FaEnvelope size={25}/>
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/mangabadouglas/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={25}/>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/pedipedienergy/" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp size={25}/>
                     </a>
                 </div>

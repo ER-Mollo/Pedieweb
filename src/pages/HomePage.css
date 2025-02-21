@@ -30,12 +30,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: #0000ff; */
 }
 
 .slogan .top-button button,
 .home-about-button button,
 .home-services-button button {
-    margin-top: 50px;
+    margin: 50px;
     padding: 12px 20px;
     font-size: 1rem;
     font-weight: 400;
@@ -44,6 +45,7 @@
     border: 1px solid rgb(153, 151, 151);
     cursor: pointer;
     transition: all 0.3s ease;
+    color: black;
 }
 
 .slogan .top-button button:hover,
@@ -150,6 +152,7 @@
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        /* background-color: #0000ff; */
     }
 
     .home-about-text {
@@ -176,5 +179,15 @@
 
     .bridge div {
         margin: 20px;
+        width: 80%;
+        /* display: none; */
+    }
+    .slogan .top-button button,
+    .home-about-button button,
+    .home-services-button button {
+        /* background-color: #0000ff; */
+        padding: 10px;
+        margin: 20px;
+
     }
 }

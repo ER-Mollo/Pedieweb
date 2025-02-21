@@ -17,7 +17,7 @@ function HomePage() {
         <div className='slogan'>
             <h1><span>Empowering Sustainable <br></br></span><span>Future</span></h1>
             <div className='top-button'>
-                <NavLink to="/Contact" ><button>Requeest a Callback</button></NavLink>
+                <NavLink to="/Contact" ><button>Request a Callback</button></NavLink>
             </div>
         </div>
       </div>
@@ -72,12 +72,12 @@ function HomePage() {
       </div>
       <div className='bridge'>
         <div>
-            <h2>The Best Service</h2>
-            <p>We are committed to revolutionizing the ay energy is sourced and utilized. 
-              Specializing in reneable energy solutions, our comprehensive services encompass
-               system design, solar installation, sales, maitanance, and cleaning
+            <h2>Have an Emergency?</h2>
+            <p>Frustrated by unplanned blackouts in 
+              your area? Give us a call and we can arrange backup system 
+              designed for your house or workplace.
             </p>
-            <button></button>
+            <button >Contact Us</button>
         </div>
       </div>
       <Footer/>
