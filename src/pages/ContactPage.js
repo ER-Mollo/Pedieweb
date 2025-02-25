@@ -4,6 +4,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
 import Footer from "../components/footer";
 import MenuBar from "../components/Menubar";
+import { NavLink } from "react-router-dom";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -116,7 +117,7 @@ console.log("here");
             Frustrated by unplanned blackouts in your area? Give us a call and
             we can arrange a backup system designed for your house or workplace.
           </p>
-          <button>Contact Us</button>
+          <NavLink to="/Contact" ><button >Contact Us</button></NavLink>
         </div>
       </div>
       <Footer />

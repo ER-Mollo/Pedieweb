@@ -8,6 +8,7 @@ import install from '../assets/install.jpg';
 import installation from '../assets/installation.jpeg';
 import { FaCheckCircle, FaTools, FaCogs, FaSolarPanel, FaShoppingCart, FaWrench, FaBroom } from 'react-icons/fa';
 import Footer from '../components/footer';
+import { NavLink } from 'react-router-dom';
 
 function ServicesPage() {
   return (
@@ -38,7 +39,7 @@ function ServicesPage() {
               <div>
                 <FaCheckCircle color='white'/>
               </div>
-              <nav style={{color:"white"}}>ailor made Energy storage Systems</nav>
+              <nav style={{color:"white"}}>Tailor made Energy storage Systems</nav>
             </div>  
           </div>
           <div className='story-right'>
@@ -47,7 +48,7 @@ function ServicesPage() {
         </div>
         <div style={{textAlign:'center', padding:'20px'}}>
           <h1>The Best Service</h1>
-          <p>We are committed to revolutionizing the ay energy is sourced and utilized. Specializing in reneable energy solutions,
+          <p>We are committed to revolutionizing the way energy is sourced and utilized. Specializing in reneable energy solutions,
              our comprehensive services encompass system design, solar installation, sales, maitanance, and cleaning</p>
         </div>
         <div>
@@ -128,7 +129,7 @@ function ServicesPage() {
               your area? Give us a call and we can arrange backup system 
               designed for your house or workplace.
             </p>
-            <button>Contact Us</button>
+            <NavLink to="/Contact" ><button >Contact Us</button></NavLink>
         </div>
       </div>
       <Footer/>

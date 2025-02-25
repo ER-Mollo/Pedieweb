@@ -7,6 +7,7 @@ import image4 from '../assets/image5.jpg';
 import pv from '../assets/pv.jpg'
 import { FaCheckCircle } from 'react-icons/fa';
 import Footer from '../components/footer';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -22,7 +23,7 @@ function AboutPage() {
       <div className='story' >
         <div className='story-left' style={{padding:'30px'}}> 
           <h5>Our Story</h5>
-          <h3>stablished in 2020 after seeing the need for <br></br>solutions to the power crisis in S.A, 
+          <h3>Established in 2020 after seeing the need for <br></br>solutions to the power crisis in S.A, 
             as Pedipedi<br></br> we intend to serve and be among the best.</h3>
           <p>Our  reason  for  existing  is  to  use  our  skills &experience we already have to develop projects  
             with  strong  value propositions  for  our  clients  that  utilize  sustainable  renewable-energy  
@@ -90,7 +91,7 @@ function AboutPage() {
             <div>
                 <FaCheckCircle color='white'/>
             </div>
-            <nav style={{color:"white"}}>APVIA and Green Card accredited technicians</nav>
+            <nav style={{color:"white"}}>SAPVIA and Green Card accredited technicians</nav>
         </div>
         <div className='mission-values'>
           <div>
@@ -114,7 +115,7 @@ function AboutPage() {
             <div>
               <FaCheckCircle color='white'/>
             </div>
-            <nav style={{color:"white"}}>tailor-made systems for each client's needs</nav>
+            <nav style={{color:"white"}}>Tailor-made systems for each client's needs</nav>
           </div>
    
         </div>
@@ -129,7 +130,7 @@ function AboutPage() {
               your area? Give us a call and we can arrange backup system 
               designed for your house or workplace.
             </p>
-            <button >Contact Us</button>
+            <NavLink to="/Contact" ><button >Contact Us</button></NavLink>
         </div>
       </div>
       <Footer/>

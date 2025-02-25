@@ -66,7 +66,7 @@ function HomePage() {
 
         </div>
         <div className='home-services-button'>
-            <button>Veiw All Services</button>
+        <NavLink to="/Service" ><button>Veiw All Services</button></NavLink>
         </div>
         
       </div>
@@ -77,7 +77,7 @@ function HomePage() {
               your area? Give us a call and we can arrange backup system 
               designed for your house or workplace.
             </p>
-            <button >Contact Us</button>
+            <NavLink to="/Contact" ><button >Contact Us</button></NavLink>
         </div>
       </div>
       <Footer/>
