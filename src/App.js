@@ -1,23 +1,30 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage.js';
-import ContactPage from './pages/ContactPage';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ValueProp from "./components/ValueProp";
+import Services from "./components/Services";
+import HowItWorks from "./components/HowItWorks";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
+import FinalCTA from "./components/Contact";
+import Team from "./components/Team";
+import './App.css'
 
-
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/About" element={<AboutPage />} />
-        <Route path="/Service" element={<ServicesPage />} />
-        <Route path="/Contact" element={<ContactPage />} />
-      </Routes>
-    </Router>
+    <div>
+      <Navbar />
+      <Hero />
+      <AboutUs/>
+      <ValueProp />
+      <Team/>
+      <Services />
+      <HowItWorks />
+      <Projects />
+      <Testimonials />
+      <FinalCTA/>
+      <Footer />
+    </div>
   );
 }
-
-export default App;

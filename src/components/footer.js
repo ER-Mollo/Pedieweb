@@ -1,63 +1,54 @@
-// src/components/Footer.js
-import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
-import logo from '../assets/logo.png';
-import { NavLink } from 'react-router-dom';
-import './Footer.css';
+import logo from "../assets/logo.png";
 
-function Footer() {
+export default function Footer() {
   return (
-    <nav className="footer">
-        <div className='footer-top'>
-            <div className='footer-top-left'>
-                <div className='footer-logo'>
-                    <img src={logo}/>
-                </div>
-                <div className='footer-mid'>
-                     <div>
-                        <h3>Physical Address</h3>
-                        <p>586, Benin Street, Kempton Park</p>
-                     </div>
-                     <div>
-                        <h3>Phone Number</h3>
-                        <p>+27 79 842 0219</p>
-                     </div>
-                </div>
-                <div className="social-icons">
-                    <a href="https://www.facebook.com/share/163bXkiarX/" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook size={25} color='#0000ff'/>
-                    </a>
-                    <a href="mailto:info@pedipedienergy.com">
-                        <FaEnvelope size={25}/>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=27798420219" target="_blank" rel="noopener noreferrer">
-                        <FaWhatsapp size={25}/>
-                    </a>
-                    <a href="https://www.linkedin.com/company/pedipedienergy/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin size={25}/>
-                    </a>
-                </div>
-            </div>
-            <div className='footer-top-mid'>
-                <h3>MENU</h3>
-                <ul>
-                    <li><NavLink to="/" exact >Home</NavLink></li>
-                    <li><NavLink to="/About" >About</NavLink></li>
-                    <li><NavLink to="/Service" >Services</NavLink></li>
-                    <li><NavLink to="/Contact" >Contact</NavLink></li>
-                </ul>
-            </div>
-            <div className='footer-top-right'>
-                <h2>We're here to help<br></br> Call us today!</h2>
-                <button>Contact Us</button>
-            </div>
+    <footer className="footer">
+      <div className="footer-container">
+
+        {/* LEFT - LOGO + DESCRIPTION */}
+        <div className="footer-brand">
+          <img src={logo} alt="Pedipedi Energy Logo" className="footer-logo" />
+
+          <p>
+            Pedipedi Energy is a South African renewable energy company
+            providing reliable solar and backup power solutions.
+          </p>
         </div>
-        <hr ></hr>
-        <div className='footer-bottom'>
-            <p>Copyright © 2025 Pedipedi energy |  Designed by Kreative Black_SA</p>
+
+        {/* MENU */}
+        <div className="footer-links">
+          <h3>Menu</h3>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#how">How It Works</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-    </nav>
+
+        {/* CONTACT */}
+        <div className="footer-contact">
+          <h3>Contact</h3>
+          <p>📞 +27 79 842 0219</p>
+          <p>📧 info@pedipedienergy.co.za</p>
+          <p>📍 South Africa</p>
+        </div>
+      </div>
+
+      {/* BOTTOM SECTION */}
+      <div className="footer-bottom">
+        <p>
+          © {new Date().getFullYear()} Pedipedi energy (pty) Ltd. All rights reserved.
+        </p>
+
+        <p className="footer-credit">
+          Website designed & built by{" "}
+          <strong>
+            <a href="https://ellentra.co.za/" target="_blank" rel="noreferrer">
+              Ellentra Technologies
+            </a>
+          </strong>
+        </p>
+      </div>
+    </footer>
   );
 }
-
-export default Footer;
