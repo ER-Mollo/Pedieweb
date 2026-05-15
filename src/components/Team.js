@@ -1,3 +1,5 @@
+import image1 from '../assets/douglas.jpeg';
+import image2 from '../assets/maxwel.jpeg'
 export default function Team() {
   return (
     <section className="team-section" id="team">
@@ -9,7 +11,7 @@ export default function Team() {
         {/* DOUGLAS */}
         <div className="team-card">
           <div className="team-image">
-            <img src="/images/douglas.jpg" alt="Douglas Mangaba" />
+            <img src={image1} alt="Douglas Mangaba" />
           </div>
 
           <div className="team-content">
@@ -41,7 +43,7 @@ export default function Team() {
         {/* MAXWELL */}
         <div className="team-card reverse">
           <div className="team-image">
-            <img src="/images/maxwell.jpg" alt="Alugumi Maxwell Mashau" />
+            <img src={image2} alt="Alugumi Maxwell Mashau" />
           </div>
 
           <div className="team-content">

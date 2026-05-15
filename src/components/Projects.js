@@ -1,3 +1,7 @@
+import image1 from '../assets/image2.jpg'
+import image2 from '../assets/image4.jpg'
+import image3 from '../assets/image5.jpg'
+
 export default function Projects() {
   return (
     <section className="projects-section" id="projects">
@@ -15,7 +19,7 @@ export default function Projects() {
           {/* Project 1 */}
           <div className="project-card">
             <img
-              src="/images/project-1.jpg"
+              src={image1}
               alt="5kW Solar System"
               className="project-image"
             />
@@ -29,7 +33,7 @@ export default function Projects() {
           {/* Project 2 */}
           <div className="project-card">
             <img
-              src="/images/project-2.jpg"
+              src={image2}
               alt="10kW Hybrid System"
               className="project-image"
             />
@@ -43,7 +47,7 @@ export default function Projects() {
           {/* Project 3 */}
           <div className="project-card">
             <img
-              src="/images/project-3.jpg"
+              src={image3}
               alt="Backup Power Installation"
               className="project-image"
             />
