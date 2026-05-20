@@ -4,8 +4,8 @@ import {
   FaBuilding,
   FaChartLine
 } from "react-icons/fa";
-import image1 from '../assets/image4.jpg'
-import image2 from '../assets/image5.jpg'
+import image1 from '../assets/business.jpeg'
+import image2 from '../assets/residential.jpeg'
 
 export default function Services() {
   return (
@@ -24,7 +24,7 @@ export default function Services() {
         <div className="main-services-grid">
           <div className="service-box">
             <img
-              src={image1}
+              src={image2}
               alt="Residential Solar"
               className="service-image"
             />
@@ -40,7 +40,7 @@ export default function Services() {
 
           <div className="service-box">
             <img
-              src={image2}
+              src={image1}
               alt="Business Solar"
               className="service-image"
             />

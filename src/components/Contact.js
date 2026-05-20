@@ -1,38 +1,6 @@
-import { useState } from "react";
-import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function FinalCTA() {
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const form = e.target;
-    const formData = new FormData(form);
-
-    setLoading(true);
-
-    try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/info@pedipedienergy.com",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
-
-      if (response.ok) {
-        setSuccess(true);
-        form.reset();
-      }
-    } catch (error) {
-      console.error("Error submitting form", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <section className="cta-section" id="contact">
       <div className="cta-container">
@@ -48,7 +16,7 @@ export default function FinalCTA() {
 
           <div className="cta-buttons">
             <a className="cta-btn green" href="#contact-form">
-              Get a Free Quote Today
+              Get a Quote Today
             </a>
 
             <a
@@ -64,7 +32,19 @@ export default function FinalCTA() {
 
         {/* FORM */}
         <div className="cta-form" id="contact-form">
-          <form onSubmit={handleSubmit}>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+
+            {/* ACCESS KEY */}
+            <input
+              type="hidden"
+              name="access_key"
+              value="c54903ea-ef38-42cd-92d2-84ee0d4b3ae0"
+            />
+
             <input
               type="text"
               name="name"
@@ -93,15 +73,10 @@ export default function FinalCTA() {
               required
             />
 
-            <button type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Request Free Quote"}
+            <button type="submit">
+              Request Quote
             </button>
 
-            {success && (
-              <p className="success-msg">
-                ✅ Thank you! We will contact you soon.
-              </p>
-            )}
           </form>
         </div>
 

@@ -2,7 +2,7 @@ import image1 from '../assets/douglas.jpeg';
 import image2 from '../assets/maxwel.jpeg'
 export default function Team() {
   return (
-    <section className="team-section" id="team">
+    <section className="team-section" id="about">
       <div className="team-container">
 
         <p className="section-tag">Leadership</p>
@@ -67,6 +67,12 @@ export default function Team() {
               battery backup solutions, and energy efficiency projects while ensuring
               compliance and safety standards.
             </p>
+
+            <p>
+               he leads a team of highly skilled technicians dedicated to the vision of the company and passionate about renewal energy. 
+               Our team regularly go for trainings on new systems,how to improve efficiency on the systems we installed to our clients and save anur clients money.
+            </p>
+
           </div>
         </div>
 

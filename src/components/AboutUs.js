@@ -59,7 +59,7 @@ export default function AboutUs() {
 
             <div className="small-images">
               <img
-                src={image2}
+                src={image3}
                 alt="Pedipedi Energy Team"
                 className="image-card"
               />

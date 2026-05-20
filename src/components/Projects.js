@@ -1,6 +1,6 @@
-import image1 from '../assets/image2.jpg'
-import image2 from '../assets/image4.jpg'
-import image3 from '../assets/image5.jpg'
+import image1 from '../assets/birchleigh.jpeg'
+import image2 from '../assets/10kw.jpeg'
+import image3 from '../assets/backup.jpeg'
 
 export default function Projects() {
   return (
@@ -26,7 +26,7 @@ export default function Projects() {
 
             <div className="project-content">
               <h3>5kW Solar System</h3>
-              <p>Kempton Park</p>
+              <p>Bichleigh North</p>
             </div>
           </div>
 
