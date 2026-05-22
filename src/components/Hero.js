@@ -15,7 +15,7 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button className="btn green">Get a Free Quote</button>
+          <button className="btn green">Get a Quote</button>
           <a className="btn white" href="https://wa.me/27798420219">
             WhatsApp Us
           </a>

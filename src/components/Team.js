@@ -69,8 +69,11 @@ export default function Team() {
             </p>
 
             <p>
-               he leads a team of highly skilled technicians dedicated to the vision of the company and passionate about renewal energy. 
-               Our team regularly go for trainings on new systems,how to improve efficiency on the systems we installed to our clients and save anur clients money.
+              Led by Mr. Alugumi, our team of specialized technicians is driven by a shared vision: accelerating the transition to clean energy through superior engineering.
+              ​We maintain a rigorous, ongoing training regimen focused on:<br/>
+              ​Next-Gen Integration: Mastering the latest advancements in renewable energy technology.<br/>
+              ​System Optimization: Auditing and retrofitting existing installations to maximize efficiency and longevity.<br/>
+              ​Fiscal Efficiency: Engineering custom solutions designed to aggressively lower operational costs and maximize client ROI.
             </p>
 
           </div>

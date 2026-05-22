@@ -22,7 +22,7 @@ export default function HowItWorks() {
             <div className="process-icon">
               <FaPhoneAlt />
             </div>
-            <h3>Free Consultation</h3>
+            <h3>Consultation</h3>
             <p>We assess your energy needs and usage</p>
           </div>
 
